@@ -38,7 +38,7 @@
             <!-- Data Pendaftar-->
             <div class="card shadow mb-4">
               <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Data pendaftar keseluruhan</h6>
+                <h6 class="m-0 font-weight-bold text-primary text-uppercase">Data pendaftar keseluruhan</h6>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -47,7 +47,7 @@
                       <tr align="center">
                         <th width="1%">No</th>
                         <th width="15%">Nama</th>
-                        <th width="15%">Alamat</th>
+                        <th width="10%">Alamat</th>
                         <th width="5%">Jenis Kelamin</th>
                         <th width="5%">Status</th>
                         <th width="5%">Action</th>
@@ -57,7 +57,7 @@
                     <tr align="center">
                     <th width="1%">No</th>
                         <th width="15%">Nama</th>
-                        <th width="15%">Alamat</th>
+                        <th width="10%">Alamat</th>
                         <th width="5%">Jenis Kelamin</th>
                         <th width="5%">Status</th>
                         <th width="5%">Action</th>
@@ -88,12 +88,14 @@
                         <tr>
                           <td  align="center"><?= $no++ ?></td>
                           <td class="text-left"><?= $p['nama'] ?></td>
-                          <td class="text-left"><?= $p['alamat'] ?></td>
+                          <td align="center"><?= $p['alamat'] ?></td>
                           <td align="center"><?= $kelamin ?></td>
                           <td align="center"><?= $status ?></td>
                           <td align="center">
-                            <a href="detailpendaftar.php?id=<?= $p['id'] ?>" class="btn btn-primary btn-sm">Cek</a>
-                            <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalHapus_<?= $p['id'] ?>">Hapus</a>
+                            <a href="detailpendaftar.php?id=<?= $p['id'] ?>" class="btn btn-primary btn-sm ">
+                            <i class="fas fa-user-check"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalHapus_<?= $p['id'] ?>">
+                            <i class="fas fa-trash-alt"></i></a>
                           </td>
                         </tr>    
 

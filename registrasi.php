@@ -86,7 +86,7 @@
                             <label for="tgl_lahir">Tanggal Lahir</label>
                             <input type="date" name="tgl_lahir" class="form-control form-control" required ="" id="tgl_lahir"
                             oninvalid="this.setCustomValidity('Masukkan tanggal lahir Anda!')"
-                            oninput="setCustomValidity('')">
+                            oninput="setCustomValidity('')"> 
                         </div>
                     </div>
                     <div class="form-group row">
@@ -173,8 +173,8 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="medium">Sudah punya akun? 
-                        <a class="medium" href="login.php">Login Disini!</a>
+                    <a class="small">Sudah punya akun? 
+                        <a class="small" href="login.php">Login Disini!</a>
                     </a>
                   </div>
                 </div>

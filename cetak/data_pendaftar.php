@@ -54,12 +54,13 @@ $html = '<style>
     $no = 1;
     while ($p = mysqli_fetch_array($all_pendaftar)) { 
         if($p['status'] == 0) {
-            $status = "Baru";
+            $status = "BARU";
         } else if($p['status'] == 1){
-            $status = "Diterima";
+            $status = "DITERIMA";
         }else {
-            $status = "Ditolak";
+            $status = "DITOLAK";
         }
+
 
 $html .= '
     <tr>
@@ -70,7 +71,7 @@ $html .= '
         <td>'. $p['alamat'] .'</td>
         <td align="center">'. $p['telepon'] .'</td>
         <td align="center">'. $p['nilai_rata'] .'</td>
-        <td align="center">'. $p['status'] .'</td>
+        <td align="center">'. $status .'</td>
     </tr>';
     
 }

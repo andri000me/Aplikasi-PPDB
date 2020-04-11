@@ -36,9 +36,16 @@
                     value="<?= $data_pendaftar['tmpt_lahir'] ?>">
                 </div>
                 <div class="col-md-6">
-                    <label for="tanggal_lahir">Tanggal Lahir</label>
-                    <input type="text" name="tanggal_lahir" class="form-control datepicker" id="tanggal_lahir" placeholder="Tanggal Lahir Anda"
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <input type="text" name="tanggal_lahir" class="form-control" data-provide="datepicker" id="tanggal_lahir" placeholder="Tanggal Lahir Anda"
                     value="<?= date("d-m-Y", strtotime($data_pendaftar['tgl_lahir'] ));?>">
+                    <!-- <label for="tanggal_lahir">Tanggal Lahir</label>
+                    <div class="input-group date" data-provide="datepicker" date-format="YY-mm-dd">
+                        <input type="text" class="form-control" value="<?= date("d-m-Y", strtotime($data_pendaftar['tgl_lahir'])) ;?>">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="form-group row">
@@ -105,7 +112,7 @@
     </div>
     <!-- Edit Photo  -->
     <?php
-        if($data_pendaftar['foto'] != NULL) {
+        if($data_pendaftar['foto'] != NULL && isset($data_pendaftar['foto'])) {
             $foto = '../uploads/' . $data_pendaftar['foto'];
         } else {
             $foto = '../assets/img/avatar.png';
@@ -116,8 +123,12 @@
         <input type="file" name="gambar" class="form-control mt-2">
     </div>
     <div class="col-md-12">
-        <button type="submit" name="btn_simpan" value="simpan_profil" class="btn btn-primary">Simpan</button>
-        <a href="dashboard.php" class="btn btn-danger" name="kembali">Kembali</a>
+        <button type="submit" name="btn_simpan" value="simpan_profil" class="btn btn-primary">
+        <i class="fas fa-save"></i>
+        Simpan</button>
+        <a href="dashboard.php" class="btn btn-danger" name="kembali">
+        <i class="fas fa-arrow-left"></i>
+        Kembali</a>
     </div>
     </div>
 </form>

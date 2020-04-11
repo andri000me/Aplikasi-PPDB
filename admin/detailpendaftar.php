@@ -42,7 +42,7 @@
                                     if($data_pendaftar['jenis_kelamin'] == 'L'){
                                         $kelamin = "Laki-laki";
                                     }  else {
-                                        $kelamin = "Laki-Perempuan";
+                                        $kelamin = "Perempuan";
                                     }
                                 ?>
                                 <h6 class="mb-0" style="color: black"><b>Jenis Kelamin</b></h6>
@@ -112,6 +112,7 @@
 
                           <!-- Button trigger modal -->
                           <button type="button" class="btn btn-primary mt-3 btn-block" data-toggle="modal" data-target="#modalvalidasi">
+                          <i class="fas fa-flag mr-2"></i>
                               Validasi Data Pendaftar
                           </button>
 
@@ -138,8 +139,12 @@
                                             </select>                                          
                                          </div>
                                         <div class="modal-footer">
-                                            <button name="simpan" value="simpan_nilai" class="btn btn-primary">Simpan</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            <button name="simpan" value="simpan_nilai" class="btn btn-primary">
+                                            <i class="fas fa-save"></i>
+                                            Simpan</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                            <i class="fas fa-arrow-left"></i>
+                                            Cancel</button>
                                         </div>
                                     </form>
                                   </div>
@@ -149,8 +154,14 @@
                       </div>
                   </div>
               </div>
-                
-              <a href="pendaftaran.php" class="btn btn-primary ">Kembali</a>
+              <div class="text-center">
+                    <a href="pendaftaran.php" class="btn btn-secondary btn-icon-split">
+                    <span class="icon text-white-50">
+                      <i class="fas fa-arrow-left"></i>
+                    </span>
+                    <span class="text">Kembali ke halaman data pendaftar</span>
+                  </a>
+              </div>
           </div>
       
                   

@@ -17,12 +17,14 @@
               <!-- Data Pendaftar-->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Laporan Pendaftar keseluruhan</h6>
+                  <h6 class="m-0 font-weight-bold text-primary text-uppercase">Laporan Pendaftar keseluruhan</h6>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <div class="col-md-12 mb-3" align="right">
-                      <a href="<?= $base_url ?>/cetak/data_pendaftar.php" class="btn btn-primary btn-sm">Cetak Semua</a>
+                      <a href="<?= $base_url ?>/cetak/data_pendaftar.php" class="btn btn-primary btn-sm">
+                      <i class="fas fa-print"></i>
+                      Cetak Semua</a>
                     </div>
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                       <thead>
@@ -74,7 +76,10 @@
                             <td align="center"><?= $kelamin ?></td>
                             <td align="center"><?= $status ?></td>
                             <td align="center">
-                              <a href="<?= $base_url?>/cetak/detail_cetak.php?id=<?= $p['id'] ?>" class="btn btn-warning btn-sm">Cetak</a>
+                              <a href="<?= $base_url?>/cetak/detail_cetak.php?id=<?= $p['id'] ?>" class="btn btn-warning btn-sm">
+                              <i class="fas fa-print"></i>
+                              Cetak
+                              </a>
                             </td>
                           </tr>    
 

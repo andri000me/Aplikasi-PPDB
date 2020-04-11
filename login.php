@@ -33,8 +33,8 @@
     <!-- Outer Row -->
     <div class="row justify-content">
       <div class="col-md-5">
-        <div class="card o-hidden border-0 shadow-lg my-5">
-          <div class="card-body bg-light p-0">
+        <div class="card o-hidden border-0 shadow-lg my-4" >
+          <div class="card-body bg-light p-0" >
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div class="col-md-12">
@@ -50,25 +50,25 @@
                       session_start();
 
                       if (isset($_SESSION['pesan_registrasi']) && $_SESSION['pesan_registrasi'] <> '') {
-                        echo '<div class="alert alert-success text-center">'.$_SESSION['pesan_registrasi'].'</div>';
+                        echo '<div class="alert alert-success text-center">'. $_SESSION['pesan_registrasi'] .'</div>';
                       }
 
                       $_SESSION['pesan_registrasi'] = '';
 
                       if (isset($_SESSION['pesan_login']) && $_SESSION['pesan_login'] <> '') {
-                        echo '<div class="alert alert-danger text-center">'.$_SESSION['pesan_login'].'</div>';
+                        echo '<div class="alert alert-danger text-center">'. $_SESSION['pesan_login'] .'</div>';
                       }
 
                       $_SESSION['pesan_login'] = '';
 
                       if (isset($_SESSION['login_error']) && $_SESSION['login_error'] <> '') {
-                        echo '<div class="alert alert-danger text-center">'.$_SESSION['login_error'].'</div>';
+                        echo '<div class="alert alert-danger text-center">'. $_SESSION['login_error'] .'</div>';
                       }
 
                       $_SESSION['login_error'] = '';
 
                       if (isset($_SESSION['pesan_logout']) && $_SESSION['pesan_logout'] <> '') {
-                        echo '<div class="alert alert-danger text-center">'.$_SESSION['pesan_logout'].'</div>';
+                        echo '<div class="alert alert-danger text-center">'. $_SESSION['pesan_logout'] .'</div>';
                       }
 
                       $_SESSION['pesan_logout'] = '';
@@ -104,14 +104,14 @@
                     </div> -->
                     <input type="submit" name="btn_login" value="Login" class="btn btn-primary btn-user btn-block"></input>
                   </form>
-                  <hr>
+                  <!-- <hr> -->
 
-                  <div class="text-center">
+                  <!-- <div class="text-center">
                     <a class="medium" href="forgot.php">Lupa Password?</a>
-                  </div>
-                  <div class="text-center">
-                    <a class="medium"> Belum punya akun? 
-                      <a class="medium" href="registrasi.php"> Registrasi Disini!</a>
+                  </div> -->
+                  <div class="text-center mt-2">
+                    <a class="small"> Belum punya akun? 
+                      <a class="small" href="registrasi.php"> Registrasi Disini!</a>
                     </a>
                   </div>
                   <hr>

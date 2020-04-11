@@ -207,7 +207,7 @@
                         <div class="card-body">
                             <div class="text-center">
                             <?php
-                                if($data_pendaftar['foto'] != NULL) {
+                                if($data_pendaftar['foto'] != NULL && isset($data_pendaftar['foto'])) {
                                 $foto = '../uploads/' . $data_pendaftar['foto'];
                                 } else {
                                     $foto = '../assets/img/avatar.png';
@@ -216,7 +216,9 @@
                             <img src="<?= $foto ?>" alt="fotoprofil" class="img-fuild rounded-circle" style="width: 200px; height:200px">
                         </div>
                         <div class="text-right mt-2">
-                            <a href="editprofile.php" name="edit_profile" class="btn btn-warning btn-sm mb-3">Edit Profile</a>                        
+                            <a href="editprofile.php" name="edit_profile" class="btn btn-warning btn-sm mb-3">
+                            <i class="fas fa-user-edit fa-sm fa-fw mr-2"></i>
+                            Edit Profile</a>                        
                         </div>
                         <h5 class="text-center card-title text-uppercase" style="color: black"><b> <?= $data_pendaftar['nama'] ?> </b></h5>
                         <ul class="list-group">

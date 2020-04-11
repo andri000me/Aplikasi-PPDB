@@ -30,23 +30,8 @@ if (mysqli_num_rows($result_pendaftar)) {
         $rt = $_POST['nilai_rata'];
 
         if (($un <= 0 || $un > 100) || ($us <= 0 || $us > 100) || ($rt <= 0 || $rt > 100))  {
-
-            echo "	<script>
-            swal({
-              title: 'Success',
-              text: 'Your account is valid',
-              type: 'info',
-              showCancelButton: true,
-              confirmButtonColor: '#3085d6',
-              confirmButtonText: 'OK'
-            }).then((value) => {
-              window.location replace= '../siswa/dashboard.php'
-            }).catch(swal.noop)
-    
-        </script>";
-
             // $_SESSION['insert_nilai_gagal'] = "Insert nilai gagal! Silahkan masukkan nilai dengan benar!";
-            // echo '<script>window.location="../siswa/dashboard.php"</script>';
+            echo "<script>alert('Insert nilai gagal!'): window.location='../siswa/dashboard.php'</script>";
             header('location:../siswa/dashboard.php');
             // echo('Masuk'); die;
         } else {

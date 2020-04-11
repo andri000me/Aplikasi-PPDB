@@ -49,11 +49,15 @@ if (mysqli_num_rows($result_pendaftar)) {
                     }        
                     
                 } else {
-                    echo "Maaf, Ukuran gambar yang diupload tidak boleh lebih dari 1MB"; die;
+                    echo "Maaf, Ukuran gambar yang diupload tidak boleh lebih dari 1MB"; 
+                    echo "<br><br> <button type='button' onClick='history.back()'>Kembali</button>";
+                    die;
                 }
                 
             } else {
-                echo "Maaf, Tipe gambar yang diupload harus JPG / JPEG / PNG."; die;
+                echo "Maaf, Tipe gambar yang diupload harus JPG / JPEG / PNG."; 
+                echo "<br><br> <button type='button' onClick='history.back()'>Kembali</button>";
+                die;
             }
 
         }

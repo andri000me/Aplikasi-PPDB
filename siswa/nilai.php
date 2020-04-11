@@ -59,8 +59,12 @@
                     </div>
 
                     <div class="text-right">
-                        <button type="submit" name="btn_simpan" value="simpan_nilai" class="btn btn-primary"> Simpan </button>
-                        <a href="dashboard.php" class="btn btn-danger" name="kembali">Kembali</a>
+                        <button type="submit" name="btn_simpan" value="simpan_nilai" class="btn btn-primary"> 
+                        <i class="fas fa-save"></i>
+                        Simpan </button>
+                        <a href="dashboard.php" class="btn btn-danger" name="kembali">
+                        <i class="fas fa-arrow-left"></i>
+                        Kembali</a>
                     </div>                  
                 </form>
             </div>

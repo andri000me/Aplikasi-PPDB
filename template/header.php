@@ -36,6 +36,7 @@
 
   <!-- css datepicker -->
   <link href="../assets/vendor/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+  <link href="../assets/vendor/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
 </head>
 
@@ -83,7 +84,7 @@
           <!-- Nav Item - Dashboard -->
           <li class="nav-item">
             <a class="nav-link" href="laporan.php">
-            <i class="fas fa-list"></i>
+            <i class="fas fa-file-import"></i>
               <span><b>Laporan</b></span></a>
           </li>
 
@@ -194,6 +195,7 @@
                 } 
                 ?>
                 <img class="img-profile rounded-circle" src="<?= $foto ?>"  alt="fotoprofil">
+                <i class="fas fa-caret-down ml-2"></i>
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

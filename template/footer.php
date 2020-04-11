@@ -17,7 +17,7 @@
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+  <i class="fas fa-angle-double-up"></i>
   </a>
 
   <!-- Logout Modal-->
@@ -32,8 +32,12 @@
         </div>
         <!-- <div class="modal-body">Apakah Anda keluar dari aplikasi?</div> -->
         <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-          <a class="btn btn-primary" href="<?= $base_url ?>/controller/logout_control.php">Logout</a>
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">
+          <i class="fas fa-arrow-left"></i>
+          Batal</button>
+          <a class="btn btn-primary" href="<?= $base_url ?>/controller/logout_control.php">
+          <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
+          Logout</a>
         </div>
       </div>
     </div>
@@ -42,6 +46,7 @@
 
   <!-- Bootstrap core JavaScript-->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery/jquery-3.5.0.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
@@ -52,18 +57,6 @@
 
   <!-- js datepicker -->
   <script src="../assets/vendor/datepicker/js/bootstrap-datepicker.min.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-        $(".datepicker").datepicker({
-            format: 'dd-mm-yyyy',
-            autoclose: true,
-            todayHighlight: true,
-        });
-    });
-  </script>
-
-
 
   <script src="../assets/js/style/js/jquery-3.4.1.min.js"></script>
   <script src="../assets/js/style/js/sweetalert2.all.min.js"></script>
@@ -84,6 +77,10 @@
   <script src="../assets/js/sb-admin-2.min.js"></script>
 
   
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
